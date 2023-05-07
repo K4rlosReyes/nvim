@@ -11,9 +11,9 @@ keymap.set("n", "<C-k>", "<C-w>k")
 
 keymap.set("n", "<leader>.", ":NvimTreeToggle<CR>")
 
-keymap.set("n", "<leader>v", ":ToggleTerm size=40 direction=vertical<CR>")
-keymap.set("n", "<leader>f", ":ToggleTerm size=10 direction=float<CR>")
-keymap.set("n", "<leader>h", ":ToggleTerm size=20 direction=horizontal<CR>")
+keymap.set("n", "<A-v>", ":ToggleTerm size=40 direction=vertical<CR>")
+keymap.set("n", "<A-f>", ":ToggleTerm size=10 direction=float<CR>")
+keymap.set("n", "<A-h>", ":ToggleTerm size=20 direction=horizontal<CR>")
 
 function _G.set_terminal_keymaps()
   local opts = {buffer = 0}
