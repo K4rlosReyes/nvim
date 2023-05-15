@@ -9,6 +9,8 @@ null_ls.setup({
         -- Formatear automáticamente los archivos Rust con rustfmt
         null_ls.builtins.formatting.rustfmt,
         -- Formatear automáticamente los archivos Lua con lua-fmt
-        null_ls.builtins.formatting.lua_format
+        null_ls.builtins.formatting.lua_format,
+
+        null_ls.builtins.formatting.isort
     }
 })

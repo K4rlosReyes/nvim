@@ -37,13 +37,12 @@ local plugins = {
                 "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-buffer", "hrsh7th/cmp-path"
             }
         }
-    }, "neovim/nvim-lspconfig", "williamboman/mason.nvim",
-    "navarasu/onedark.nvim", "folke/trouble.nvim",
-    "jose-elias-alvarez/null-ls.nvim", {"nvim-neorg/neorg"},
+    }, "neovim/nvim-lspconfig", "williamboman/mason.nvim", "rose-pine/neovim",
+    "folke/trouble.nvim", "jose-elias-alvarez/null-ls.nvim",
     {'akinsho/toggleterm.nvim', version = "*", config = true},
     "TimUntersberger/neogit", "numToStr/Comment.nvim",
-    "folke/todo-comments.nvim", "lukas-reineke/indent-blankline.nvim",
-    "nvim-tree/nvim-tree.lua", "nvim-lualine/lualine.nvim",
+    "folke/todo-comments.nvim", "nvim-tree/nvim-tree.lua",
+    "nvim-lualine/lualine.nvim"
 }
 
 local opts = {}
