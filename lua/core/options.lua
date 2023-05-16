@@ -1,5 +1,4 @@
 local opt = vim.opt
-local g = vim.g
 
 opt.guicursor = ""
 
@@ -27,9 +26,6 @@ opt.relativenumber = true
 opt.numberwidth = 2
 opt.ruler = false
 
--- disable nvim intro
-opt.shortmess:append "sI"
-
 opt.signcolumn = "yes"
 opt.splitbelow = true
 opt.splitright = true
@@ -44,6 +40,6 @@ opt.updatetime = 250
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
 
-g.python3_host_prog = '~/Apps/miniconda3/envs/torch/bin/python'
+vim.g.python3_host_prog = "~/Apps/miniconda3/envs/torch/bin/python"
 
-g.mapleader = " "
+vim.g.mapleader = " "
