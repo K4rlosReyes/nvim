@@ -41,8 +41,12 @@ local plugins = {
     "folke/trouble.nvim", "jose-elias-alvarez/null-ls.nvim",
     {'akinsho/toggleterm.nvim', version = "*", config = true},
     "TimUntersberger/neogit", "numToStr/Comment.nvim",
-    "folke/todo-comments.nvim", "nvim-tree/nvim-tree.lua",
-    "nvim-lualine/lualine.nvim"
+    "folke/todo-comments.nvim", "nvim-lualine/lualine.nvim", {
+        "nvim-telescope/telescope-file-browser.nvim",
+        dependencies = {
+            "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"
+        }
+    }, "nvim-telescope/telescope-project.nvim"
 }
 
 local opts = {}
