@@ -70,6 +70,6 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 vim.api.nvim_set_keymap('n', '<C-p>',
                         ":lua require'telescope'.extensions.project.project{}<CR>",
                         {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<space>fb",
+vim.api.nvim_set_keymap("n", "<C-e>",
                         ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
                         {noremap = true})
