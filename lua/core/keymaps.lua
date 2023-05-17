@@ -1,20 +1,12 @@
 local keymap = vim.keymap
 keymap.set("n", "<Esc>", ":noh <CR>")
-keymap.set("n", "<leader>sv", "<C-w>v")
-keymap.set("n", "<leader>sh", "<C-w>s")
-keymap.set("n", "<leader>sx", ":close<CR>")
 
 keymap.set("n", "<C-h>", "<C-w>h")
 keymap.set("n", "<C-l>", "<C-w>l")
 keymap.set("n", "<C-j>", "<C-w>j")
 keymap.set("n", "<C-k>", "<C-w>k")
 
-keymap.set("n", "<leader>.", ":NvimTreeToggle<CR>")
-keymap.set("n", "<leader>ee", ":Explore<CR>")
-
-keymap.set("n", "<A-v>", ":ToggleTerm size=40 direction=vertical<CR>")
-keymap.set("n", "<A-f>", ":ToggleTerm size=10 direction=float<CR>")
-keymap.set("n", "<A-h>", ":ToggleTerm size=20 direction=horizontal<CR>")
+keymap.set("n", "<leader>ee", ":Rexplore<CR>")
 
 function _G.set_terminal_keymaps()
     local opts = {buffer = 0}
@@ -25,6 +17,12 @@ function _G.set_terminal_keymaps()
     vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
     vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
     vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
+    vim.keymap.set("n", "<A-v>", ":ToggleTerm size=40 direction=vertical<CR>",
+                   opts)
+    vim.keymap
+        .set("n", "<C-t>", ":ToggleTerm size=10 direction=float<CR>", opts)
+    vim.keymap.set("n", "<A-h>", ":ToggleTerm size=20 direction=horizontal<CR>",
+                   opts)
 end
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
